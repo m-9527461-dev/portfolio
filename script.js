@@ -138,7 +138,7 @@ if (projectList && !document.querySelector('.tiktok-section')) {
     tiktokLink.rel = 'noopener';
     tiktokLink.textContent = 'Buka video TikTok';
     tiktokSection.querySelector('.cta').append(tiktokLink);
-    projectList.closest('.page-content')?.after(tiktokSection);
+    document.querySelector('.project-video-section')?.after(tiktokSection);
 }
 
 document.querySelector('#contactForm')?.addEventListener('submit', (event) => {
